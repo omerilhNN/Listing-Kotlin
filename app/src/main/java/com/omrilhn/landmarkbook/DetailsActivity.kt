@@ -13,6 +13,11 @@ class DetailsActivity : AppCompatActivity() {
         val view = binding.root//after initializing take result
         setContentView(view) //you can reach all the binding properties by that
 
-        binding
+        val intent = intent
+        val selectedEvent = intent.getSerializableExtra("event") as Events
+        binding.partyName.text = selectedEvent.name
+        binding.partyDetails.text = selectedEvent.name
+        binding.partyImage.setImageResource(selectedEvent.image)
+
     }
 }
