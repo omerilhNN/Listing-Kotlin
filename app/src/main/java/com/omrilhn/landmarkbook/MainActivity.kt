@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         val dumanConcert = Events("Duman"," at IF Armada",R.drawable.duman)
         val eventify = Events("EventifyLogo","EventifyApp",R.drawable.pp)
 
-        val bitmap = Bitmap
 
         //Adding elements to the list
         eventsList.add(dumanConcert)
